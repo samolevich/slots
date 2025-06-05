@@ -42,7 +42,7 @@ function startSpin() {
     spinning = true;
 
     // Запрос к серверу
-    fetch("delay.php")
+    fetch("server/delay.php")
         .then(response => response.text())
         .then(delay => {
             document.getElementById("delay-result").textContent = `Delay: ${delay}s`;
